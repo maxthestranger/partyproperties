@@ -1,3 +1,5 @@
+import logo from '../assets/images/logo.svg';
+
 export default function Header() {
   return (
     <section className="header header-fixed-xl">
@@ -14,7 +16,7 @@ export default function Header() {
               </ul>
               <span className="navbar-text text-uppercase d-flex align-items-center">
                 <span className="text-white-70 mr-1">Call us today:</span>{' '}
-                <span className="text-white mr-1">123-456-7890</span>{' '}
+                <span className="text-white mr-1">+(254) 775 043 756</span>{' '}
                 <i className="material-icons fs-1">phone</i>
               </span>
             </nav>
@@ -28,8 +30,8 @@ export default function Header() {
               className="navbar navbar-expand-lg navbar-light w-100"
               id="header-navbar"
             >
-              <a className="navbar-brand font-weight-bold" href="index.html">
-                PROFI
+              <a className="navbar-brand font-weight-bold" href="/">
+                <img src={logo} alt="logo" className="pb_logo" />
               </a>{' '}
               <button
                 className="navbar-toggler"
@@ -81,15 +83,6 @@ export default function Header() {
                       href="#faq"
                     >
                       FAQ
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a
-                      className="nav-link text-uppercase"
-                      data-toggle="smooth-scroll"
-                      href="#vouchers"
-                    >
-                      Vouchers
                     </a>
                   </li>
                   <li className="nav-item">
